@@ -1,12 +1,11 @@
-
+import Pizza.BasePizze;
+import Pizza.VegPizza;
 
 public class  Main {
     public static void main(String[] args) {
 
-    Vehicle goodsShiftMahindra = new GoodsCar();
-    goodsShiftMahindra.Drive();
-    Vehicle sportsCar = new sportsCar();
-    sportsCar.Drive();
+        BasePizze vegPizza = new Mushroom(new Cheese(new VegPizza()));
+        System.out.println(vegPizza.cost());
     }
 }
 
