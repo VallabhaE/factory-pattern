@@ -1,11 +1,11 @@
-import Pizza.BasePizze;
-import Pizza.VegPizza;
+import FactoryPattren.Shape;
+import FactoryPattren.ShapeFactory;
 
 public class  Main {
     public static void main(String[] args) {
-
-        BasePizze vegPizza = new Mushroom(new Cheese(new VegPizza()));
-        System.out.println(vegPizza.cost());
+        ShapeFactory sh = new ShapeFactory();
+        Shape Obj = sh.getShape("circle");
+        Obj.Draw();
     }
 }
 
